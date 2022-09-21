@@ -118,3 +118,34 @@ img.tecnologies-badges__icon {
   width: 102px;
   height: 102px;
 }
+
+/* Estilos da section Projects */
+section.projects {
+  min-height: 100vh;
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+ul.projects__cards {
+  white-space: nowrap;
+  width: 85%;
+  overflow-x: auto;
+  padding: 20px;
+}
+ul.projects__cards a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-color-1);
+}
+ul.projects__cards li {
+  display: inline-block;
+  margin-right: 10px;
+}
+h3.projects__cards-title {
+  text-align: center;
+  font-size: 3.6vh;
+  margin-top: 20px;
+}
