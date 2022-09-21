@@ -200,3 +200,24 @@ div.contact__alternatives-icons {
   display: flex;
   gap: 20px;
 }
+
+/* Estilos da section Links */
+section.links {
+  min-height: calc(100vh - 25vmin);
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.links article {
+  text-align: center;
+  font-size: 3.6vh;
+}
+.links article h3 {
+  margin-bottom: 20px;
+}
+.links__design a {
+  padding: 0 20px 0 20px;
+}
