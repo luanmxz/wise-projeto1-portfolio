@@ -31,7 +31,11 @@ button {
   background: none;
   padding: 1vh 1vh;
 }
-
+.menu-icon {
+  position: fixed;
+  color: #fefbf6;
+  z-index: 1;
+}
 .close-menu-icon img {
   width: 60px;
   height: 60px;
@@ -46,12 +50,10 @@ button {
 nav.nav-menu-screen {
   min-height: 100vh;
   width: 100%;
-  z-index: 1;
   background-color: var(--main-color-3);
   border-bottom-right-radius: 120px;
   position: fixed;
-  opacity: 1;
-  transition: 1s;
+  z-index: 1;
 }
 nav ul {
   display: flex;
@@ -63,7 +65,7 @@ nav ul {
   margin-top: 30px;
 }
 nav li {
-  width: 50%;
+  width: 60%;
   color: var(--main-color-1);
   font-size: 3.6vh;
   text-align: center;
@@ -87,7 +89,7 @@ article.intro__social-media-icons {
   gap: 30px;
 }
 h1.intro__presentation {
-  font-size: 3rem;
+  font-size: 7.2vh;
   padding: 0 1rem 0 1rem;
   text-align: center;
   color: var(--main-color-3);
@@ -204,7 +206,7 @@ section.contact {
 }
 form.contact__form {
   width: 80%;
-  height: 350px;
+  height: 50vh;
   margin: 20px auto 0 auto;
   padding: 10px 20px 0 20px;
   display: flex;
@@ -230,7 +232,7 @@ textarea {
   box-shadow: inset 10px 10px 4px -9px rgba(61, 60, 66, 1);
 }
 .contact__form input {
-  height: 30px;
+  height: 4vh;
 }
 .contact__form-button {
   width: 90%;
@@ -283,9 +285,126 @@ footer .address,
 .copyrights {
   text-align: center;
   color: var(--main-color-3);
-  font-size: 3.6vh;
+  font-size: 3vh;
 }
 
+/* classe para esconder nav screen */
 .invisible {
   display: none;
+}
+
+/* Ajustes para a versão de tablet */
+@media screen and (min-width: 834px) {
+  /* Ajustes no header e nav */
+
+  .close-menu-icon,
+  .menu-icon {
+    display: none;
+  }
+
+  nav.nav-menu-screen {
+    display: block;
+    width: 100%;
+    min-height: 12vmin;
+    background-color: var(--main-color-2);
+    border-radius: 0;
+    border-bottom: 2px solid #fefbf6;
+    z-index: 0;
+    position: relative;
+  }
+
+  nav ul {
+    min-height: 12vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3vmin;
+    margin: 0;
+  }
+
+  nav li {
+    width: fit-content;
+    gap: 20px;
+  }
+
+  /* Ajustes na Intro */
+  section.intro {
+    height: calc(100vh - 12vmin);
+    justify-content: center;
+  }
+  h1.intro__presentation {
+    margin: 0 auto 0 auto;
+    padding: 0 7rem 0 7rem;
+    order: 1;
+    margin-bottom: 30%;
+  }
+  article.intro__social-media-icons {
+    margin: 0;
+    order: 2;
+  }
+  article.intro__social-media-icons a svg {
+    width: 117px;
+    height: 117px;
+  }
+
+  div.intro__shape-draw {
+    display: none;
+  }
+
+  /* Ajuste no título das seções */
+  .section-title {
+    margin-top: 10%;
+  }
+
+  /* Ajuste na imagem da seção About */
+  img.about__profile-pic {
+    width: 320px;
+    height: 320px;
+  }
+
+  /* Ajustes na seção Tecnologies */
+  img.tecnologies-badges__icon {
+    width: 200px;
+    height: 200px;
+  }
+
+  /*Ajustes na seção Projects */
+
+  ul.projects__cards {
+    width: 80%;
+    margin-top: 15%;
+  }
+
+  ul.projects__cards li {
+    display: inline-block;
+    margin-right: 60px;
+  }
+
+  img.projects__cards-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  h3.projects__cards-title {
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 20px;
+  }
+
+  /* Ajustes na seção Contact */
+  div.contact__alternatives-icons a svg {
+    width: 140px;
+    height: 120px;
+  }
+
+  /* Ajustes na seção Links */
+  section.links a svg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
 }
