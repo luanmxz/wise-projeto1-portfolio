@@ -99,3 +99,22 @@ p.about__description {
   font-size: 5vh;
   margin-top: 8vh;
 }
+
+/* Estilos da section Tecnologies */
+section.tecnologies {
+  min-height: 100vh;
+  align-items: center;
+  color: var(--main-color-3);
+}
+article.tecnologies-badges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  gap: 5vh;
+}
+img.tecnologies-badges__icon {
+  width: 102px;
+  height: 102px;
+}
