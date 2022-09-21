@@ -65,3 +65,37 @@ div.intro__shape-draw {
   );
   margin: auto auto 0 auto;
 }
+
+/* Estilos da section About */
+section.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  min-height: 100vh;
+}
+h2.section-title {
+  font-size: 6.4vh;
+  text-align: center;
+  padding: 5vh;
+}
+img.about__profile-pic {
+  width: 140px;
+  height: 140px;
+  filter: drop-shadow(-4px 6px 21px #000);
+}
+div.about__line {
+  width: 80%;
+  height: 1px;
+  background-color: var(--main-color-1);
+  margin-top: 8vh;
+  opacity: 0.6;
+}
+p.about__description {
+  width: 90%;
+  text-align: center;
+  color: var(--main-color-1);
+  font-size: 5vh;
+  margin-top: 8vh;
+}
