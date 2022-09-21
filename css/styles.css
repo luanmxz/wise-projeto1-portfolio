@@ -149,3 +149,54 @@ h3.projects__cards-title {
   font-size: 3.6vh;
   margin-top: 20px;
 }
+
+/* Estilos da section Contact */
+section.contact {
+  min-height: 100vh;
+  color: var(--main-color-3);
+  padding-top: 10px;
+}
+form.contact__form {
+  width: 80%;
+  height: 350px;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-around;
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+}
+.contact__form label {
+  font-size: 3.6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact__form input,
+textarea {
+  width: 100%;
+  padding: 5px 5px;
+  background-color: var(--main-color-3);
+  -webkit-box-shadow: inset 10px 10px 4px -9px rgba(61, 60, 66, 1);
+  -moz-box-shadow: inset 10px 10px 4px -9px rgba(61, 60, 66, 1);
+  box-shadow: inset 10px 10px 4px -9px rgba(61, 60, 66, 1);
+}
+.contact__form input {
+  height: 30px;
+}
+.contact__form-button {
+  width: 90%;
+  padding: 15px;
+  margin: 0 auto 0 auto;
+  background-color: var(--main-color-1);
+  color: var(--main-color-3);
+  font-size: 5vh;
+}
+div.contact__alternatives-icons {
+  width: max-content;
+  margin: 20px auto 0 auto;
+  display: flex;
+  gap: 20px;
+}
