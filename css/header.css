@@ -1,0 +1,92 @@
+/* Estilos do Header */
+header.header {
+  width: 100%;
+  border: none;
+}
+button.header__menu-icon {
+  position: fixed;
+  color: #fefbf6;
+  z-index: 1;
+}
+
+button.header__menu-icon,
+button.header__close-menu-icon {
+  border: none;
+  background: none;
+  padding: 1vh 1vh;
+}
+
+button.header__close-menu-icon img {
+  width: 60px;
+  height: 60px;
+  background: none;
+}
+
+nav.header__nav-screen {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--main-color-3);
+  border-bottom-right-radius: 120px;
+  border: 3px solid #a6d1e6;
+  position: fixed;
+  z-index: 1;
+}
+ul.header__container-nav-bar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin-top: 30px;
+}
+li.header__nav-bar {
+  color: var(--main-color-1);
+  font-size: 3.6vh;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+img.header__menu-list-icons {
+  width: 58px;
+  height: 42px;
+}
+
+@media screen and (min-width: 834px) {
+  /* Ajustes no header e nav */
+  button.header__close-menu-icon,
+  button.header__menu-icon {
+    display: none;
+  }
+
+  nav.header__nav-screen {
+    display: block;
+    width: 100%;
+    min-height: 16vh;
+    background-color: var(--main-color-2);
+    border-radius: 0;
+    border-bottom: 2px solid #fefbf6;
+    z-index: 0;
+    position: relative;
+  }
+
+  ul.header__container-nav-bar {
+    min-height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  li.header__nav-bar {
+    padding: 1vw 3vw 1vw 3vw;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* Efeitos para a versão desktop */
+  nav ul li:hover {
+    transform: scale(1.1);
+  }
+}

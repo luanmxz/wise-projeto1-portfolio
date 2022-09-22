@@ -1,0 +1,23 @@
+/* Estilos da section Links */
+section.links {
+  min-height: calc(100vh - 20vh);
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.links article {
+  text-align: center;
+  font-size: 3.6vh;
+}
+.links article h3 {
+  margin-bottom: 2vh;
+}
+.links__design a {
+  padding: 0 20px 0 20px;
+}
+.links a svg {
+  width: 10vh;
+  height: 10vh;
+}

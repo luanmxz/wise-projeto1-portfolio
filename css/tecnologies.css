@@ -1,0 +1,37 @@
+/* Estilos da section Tecnologies */
+section.tecnologies {
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  padding: 0 1vh 0 1vh;
+  color: var(--main-color-3);
+}
+article.tecnologies-badges {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 5vh;
+}
+img.tecnologies-badges__icon {
+  width: 20vmin;
+  height: 20vmin;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+@media screen and (min-width: 1366px) {
+  /* Ajustes na section Tecnologies */
+  section.tecnologies {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  section.tecnologies h2 {
+    grid-column: 1;
+  }
+  article.tecnologies-badges {
+    margin: 0;
+    padding: 4vh;
+    grid-column: 2;
+  }
+}

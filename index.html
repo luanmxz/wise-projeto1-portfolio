@@ -1,45 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Luan</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" >
+    <link rel="stylesheet" href="./css/styles.css" >
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/intro.css" >
+    <link rel="stylesheet" href="./css/about.css" >
+    <link rel="stylesheet" href="./css/tecnologies.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css" >
+    <link rel="stylesheet" href="./css/links.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="./js/menu.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- botão para abrir tela de navegação do menu -->
-      <button type="button" class="menu-icon">
+      <button type="button" class="header__menu-icon">
           <img src="./assets/icons/menu-icon.svg" alt="blue menu icon svg" />
       </button>
       <!-- Tela de navegação do menu -->
-      <nav class="nav-menu-screen invisible">
+      <nav class="header__nav-screen invisible">
         <!-- botão para fechar tela de navegação do menu -->
-        <button type="button" class="close-menu-icon">
+        <button type="button" class="header__close-menu-icon">
           <img src="./assets/icons/close-icon.svg" alt="black close menu icon svg"/>
         </button>
-        <ul>
-          <li>
-            <img class="menu-list-icons" src="./assets/icons/address_card-icon.svg" alt="Ícone identificação pessoal"/>
+        <ul class="header__container-nav-bar">
+          <li class="header__nav-bar">
+            <img class="header__menu-list-icons" src="./assets/icons/address_card-icon.svg" alt="Ícone identificação pessoal"/>
             About me
           </li>
-          <li>
-            <img class="menu-list-icons" src="./assets/icons/code-icon.svg" alt="Ícone tecnologias"/>
+          <li class="header__nav-bar">
+            <img class="header__menu-list-icons" src="./assets/icons/code-icon.svg" alt="Ícone tecnologias"/>
             Tecnologies
           </li>
-          <li>
-            <img src="./assets/icons/folder-icon.svg" alt="Ícone pasta de projetos" class="menu-list-icons">
+          <li class="header__nav-bar">
+            <img src="./assets/icons/folder-icon.svg" alt="Ícone pasta de projetos" class="header__menu-list-icons">
             Projects
           </li>
-          <li>
-            <img src="./assets/icons/email-icon.svg" alt="Ícone email para contato" class="menu-list-icons">
+          <li class="header__nav-bar">
+            <img src="./assets/icons/email-icon.svg" alt="Ícone email para contato" class="header__menu-list-icons">
             Contact
           </li>
-          <li>
-            <img src="./assets/icons/link-icon.svg" alt="Ícone links" class="menu-list-icons">
+          <li class="header__nav-bar">
+            <img src="./assets/icons/link-icon.svg" alt="Ícone links" class="header__menu-list-icons">
             Links
           </li>
         </ul>
