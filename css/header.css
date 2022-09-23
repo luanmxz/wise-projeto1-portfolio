@@ -3,9 +3,9 @@ header.header {
   width: 100%;
   border: none;
 }
-button.header__menu-icon {
-  width: 60px;
-  height: 60px;
+button.header__menu-icon img {
+  width: 45px;
+  height: 45px;
   position: fixed;
   color: #fefbf6;
   z-index: 1;
