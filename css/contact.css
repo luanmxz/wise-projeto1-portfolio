@@ -44,6 +44,7 @@ textarea {
   background-color: var(--main-color-1);
   color: var(--main-color-3);
   font-size: 5vh;
+  text-transform: uppercase;
 }
 div.contact__alternatives-icons {
   width: max-content;
@@ -61,4 +62,15 @@ div.contact__alternatives-icons a svg {
 }
 .correct {
   border: 1px solid green;
+}
+
+@media screen and (max-width: 1366px) {
+  .contact__form-button,
+  div.contact__alternatives-icons a svg {
+    transition: 1s;
+  }
+  .contact__form-button:hover,
+  div.contact__alternatives-icons a svg:hover {
+    scale: 1.05;
+  }
 }

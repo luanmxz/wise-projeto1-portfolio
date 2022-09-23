@@ -24,3 +24,12 @@ section.links {
 .links__audit a {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1366px) {
+  .links a svg {
+    transition: 1s;
+  }
+  .links a svg:hover {
+    transform: scale(1.1);
+  }
+}

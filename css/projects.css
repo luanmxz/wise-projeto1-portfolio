@@ -71,6 +71,10 @@ h3.projects__cards-title {
   ul.projects__cards li {
     margin: 0;
     justify-self: center;
+    transition: 1s;
+  }
+  ul.projects__cards li:hover {
+    transform: scale(1.1);
   }
   h3.projects__cards-title {
     text-align: center;
