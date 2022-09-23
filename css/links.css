@@ -21,3 +21,6 @@ section.links {
   width: 10vh;
   height: 10vh;
 }
+.links__audit a {
+  text-decoration: underline;
+}
