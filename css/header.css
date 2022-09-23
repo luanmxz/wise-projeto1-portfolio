@@ -4,6 +4,8 @@ header.header {
   border: none;
 }
 button.header__menu-icon {
+  width: 60px;
+  height: 60px;
   position: fixed;
   color: #fefbf6;
   z-index: 1;
