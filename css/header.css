@@ -41,6 +41,8 @@ ul.header__container-nav-bar {
 li.header__nav-bar {
   color: var(--main-color-1);
   font-size: 3.6vh;
+}
+li.header__nav-bar a {
   text-align: center;
   display: flex;
   justify-content: start;
@@ -81,12 +83,13 @@ img.header__menu-list-icons {
   }
   li.header__nav-bar {
     padding: 1vw 3vw 1vw 3vw;
+    transition: 0.7s;
   }
 }
 
 @media screen and (min-width: 1366px) {
   /* Efeitos para a versão desktop */
-  nav ul li:hover {
+  li.header__nav-bar:hover {
     transform: scale(1.1);
   }
 }

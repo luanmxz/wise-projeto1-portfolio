@@ -60,6 +60,7 @@ div.intro__shape-draw {
   }
   div.intro__shape-draw {
     display: none;
+    padding: 0 100px 0 100px;
   }
 }
 
@@ -88,5 +89,50 @@ div.intro__shape-draw {
     grid-column: 1 / span 2;
     display: block;
     order: 3;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* Animações */
+  .intro__presentation {
+    -webkit-animation: intro__presentation 4s linear infinite alternate both;
+    animation: intro__presentation 4s linear infinite alternate both;
+  }
+
+  @-webkit-keyframes intro__presentation {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  @keyframes intro__presentation {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+
+  article.intro__social-media-icons a {
+    transition: 0.8s;
+  }
+
+  article.intro__social-media-icons a:hover {
+    transform: scale(1.2);
   }
 }

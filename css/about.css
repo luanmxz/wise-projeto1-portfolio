@@ -18,7 +18,7 @@ img.about__profile-pic {
   height: 25vh;
   justify-self: center;
   grid-row: 2;
-  filter: drop-shadow(-4px 6px 21px #000);
+  filter: drop-shadow(-4px 6px 18px #fefbf6);
 }
 div.about__line {
   width: 80%;
@@ -79,3 +79,5 @@ p.about__description {
     align-self: start;
   }
 }
+
+/* Animações */

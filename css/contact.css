@@ -55,3 +55,10 @@ div.contact__alternatives-icons a svg {
   width: 10vh;
   height: 10vh;
 }
+
+.error {
+  border: 1px solid red;
+}
+.correct {
+  border: 1px solid green;
+}
